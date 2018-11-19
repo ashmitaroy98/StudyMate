@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "268186525460",
+    "firebase_url": "https://study-mate-4d92f.firebaseio.com",
+    "project_id": "study-mate-4d92f",
+    "storage_bucket": "study-mate-4d92f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:268186525460:android:0437aedc798e3b55",
+        "android_client_info": {
+          "package_name": "com.example.ashmita.studymate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "268186525460-65k222l80jqhrkiqmc906445uipglthp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ashmita.studymate",
+            "certificate_hash": "751deff8d049ffec0a75c2543cfc9d8d7d6f69a4"
+          }
+        },
+        {
+          "client_id": "268186525460-asmmlh10ikr6hnvliuivn4fbeanflck6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCd5VvxG4H8THExsfDchmtmAfzqL6ijQTU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "268186525460-asmmlh10ikr6hnvliuivn4fbeanflck6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
