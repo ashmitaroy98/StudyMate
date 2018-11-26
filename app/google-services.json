@@ -23,6 +23,14 @@
           }
         },
         {
+          "client_id": "268186525460-ktdka0e3i1ppkfvce8jpe4hcjiroultq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ashmita.studymate",
+            "certificate_hash": "efc554121ebc111fb84a4c8c408e04d1a210cb58"
+          }
+        },
+        {
           "client_id": "268186525460-asmmlh10ikr6hnvliuivn4fbeanflck6.apps.googleusercontent.com",
           "client_type": 3
         }
