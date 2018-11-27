@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#1b1a1a</color>
-    <color name="colorPrimaryDark">#030303</color>
+    <color name="colorPrimary">#3eaeae</color>
+    <color name="colorPrimaryDark">#226e6e</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="titleTextColor">#8ab4ce</color>
     <color name="tabTextColor">#8ab4ce</color>
     <color name="tabIndicatorColor">#cf6666</color>
-    <color name="titleTextColor">#8ab4ce</color>
 </resources>
