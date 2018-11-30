@@ -93,6 +93,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
+            android:background="@drawable/btn_send_style"
+            android:textColor="#ffffff"
             android:layout_below="@+id/time"
             android:layout_marginLeft="18dp"
             android:layout_marginRight="18dp"

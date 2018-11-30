@@ -7,7 +7,7 @@
         app:showAsAction="never"/>
 
     <item android:id="@+id/action_add"
-        android:icon="@drawable/add"
+        android:icon="@drawable/ic_action_name"
         android:title="Add Post"
         app:showAsAction="always"/>
 
