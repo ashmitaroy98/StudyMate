@@ -1,110 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<android.support.v7.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="150dp">
+    android:layout_height="wrap_content"
+    android:elevation="20dp"
+    android:background="#616161">
 
-
-    <ImageView
-        android:id="@+id/imageView2"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="#666666" />
+        android:layout_height="wrap_content"
 
-    <TextView
-        android:id="@+id/time"
-        android:layout_width="120dp"
-        android:layout_height="39dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginStart="8dp"
-        android:ems="10"
-        android:text="Time"
-        android:textColor="#ffffff"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/card_availability" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="63dp"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/black_gradient" />
+        android:background="#00897b"
+        android:padding="10dp">
 
 
-    <TextView
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/img_style"/>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/send"
+            app:srcCompat="@drawable/black_gradient" />
 
-        android:id="@+id/card_name"
-        android:layout_width="227dp"
-        android:layout_height="27dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="Name"
-        android:textColor="#ffffff"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/profilephoto"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/card_description"
-        android:layout_width="273dp"
-        android:layout_height="37dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="4dp"
-        android:text="Description"
-        android:textColor="#ffffff"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/profilephoto"
-        app:layout_constraintTop_toBottomOf="@+id/card_name" />
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/card_availability"
+            android:layout_alignBottom="@+id/card_availability"
+            android:layout_marginRight="18dp"
+            android:layout_marginStart="24dp"
+            android:layout_toEndOf="@+id/card_availability"
+            android:ems="10"
+            android:padding="2dp"
+            android:text="Time"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/card_availability" />
 
-    <TextView
 
-        android:id="@+id/card_availability"
-        android:layout_width="127dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginStart="16dp"
-        android:text="Availability"
-        android:textAlignment="center"
-        android:textColor="#ffffff"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageButton
-        android:background="@drawable/btn_send_style"
-        android:id="@+id/send"
-        android:layout_width="50dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:srcCompat="@android:drawable/ic_menu_send" />
+        <TextView
 
-    <ImageView
-        android:id="@+id/profilephoto"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_launcher_round" />
+            android:id="@+id/card_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/profilephoto"
+            android:layout_marginStart="23dp"
+            android:layout_toEndOf="@+id/profilephoto"
+            android:padding="2dp"
+            android:text="Name"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:id="@+id/card_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/card_name"
+            android:layout_below="@+id/card_name"
+            android:padding="2dp"
+            android:text="Description"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+
+            android:id="@+id/card_availability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/profilephoto"
+            android:layout_below="@+id/profilephoto"
+            android:layout_marginTop="14dp"
+            android:padding="2dp"
+            android:text="Availability"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/time"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="12dp"
+            android:text="Send Message"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/profilephoto"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="19dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:srcCompat="@mipmap/ic_launcher_round" />
+
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

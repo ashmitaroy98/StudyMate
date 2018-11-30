@@ -7,56 +7,48 @@ package com.example.ashmita.studymate;
 public class item {
 
 
-    String profileName;
-    int profilePhoto;
-    String description;
-    String time;
-
+    private String name, image, desc, time;
 
     public item() {
     }
 
-    public item(String profileName,  String description,String ETtime,int profilePhoto) {
-        this.profileName = profileName;
-        this.profilePhoto = profilePhoto;
-
-        this.description = description;
-        this.time = ETtime;
+    public item(String name, String image, String desc, String time) {
+        this.name = name;
+        this.image = image;
+        this.desc = desc;
+        this.time = time;
     }
 
-
-    public String getProfileName() {
-        return profileName;
+    public String getName() {
+        return name;
     }
 
-    public int getProfilePhoto() {
-        return profilePhoto;
+    public void setName(String name) {
+        this.name = name;
     }
 
-
-    public String getDescription()
-    {
-        return description;
+    public String getImage() {
+        return image;
     }
 
-    public String getETtime(){
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+
+    public String getTime() {
         return time;
     }
 
-
-    public void setProfileName(String profileName) {
-        this.profileName = profileName;
+    public void setTime(String time) {
+        this.time = time;
     }
 
-    public void setProfilePhoto(int profilePhoto) {
-        this.profilePhoto = profilePhoto;
-    }
-
-    public void setETtime(String ETtime){
-        this.time = ETtime;
-    }
-
-    public  void setDescription(String description){
-        this.description = description;
-    }
 }

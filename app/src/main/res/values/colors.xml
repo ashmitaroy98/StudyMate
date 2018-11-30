@@ -6,4 +6,5 @@
     <color name="titleTextColor">#8ab4ce</color>
     <color name="tabTextColor">#8ab4ce</color>
     <color name="tabIndicatorColor">#cf6666</color>
+    <color name="card_background">#455a64</color>
 </resources>

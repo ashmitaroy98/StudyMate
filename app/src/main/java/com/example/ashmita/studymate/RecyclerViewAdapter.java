@@ -40,10 +40,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
-        holder.tv_name.setText(mData.get(position).getProfileName());
-        holder.tv_description.setText(mData.get(position).getDescription());
-        holder.prof_img.setImageResource(mData.get(position).getProfilePhoto());
-        holder.ETtime.setText(mData.get(position).getETtime());
+        holder.tv_name.setText(mData.get(position).getName());
+        holder.tv_description.setText(mData.get(position).getDesc());
+        holder.ETtime.setText(mData.get(position).getTime());
 
     }
 
@@ -65,7 +64,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
             tv_name = (TextView) itemView.findViewById(R.id.card_name);
             tv_description = (TextView) itemView.findViewById(R.id.card_description);
-            prof_img = (ImageView) itemView.findViewById(R.id.profilephoto);
             ETtime = (TextView) itemView.findViewById(R.id.time);
 
 

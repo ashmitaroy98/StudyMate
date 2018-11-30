@@ -11,6 +11,8 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
@@ -83,6 +85,7 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+
     }
 
     @Override
@@ -100,6 +103,11 @@ public class HomeActivity extends AppCompatActivity {
             startActivity(new Intent(HomeActivity.this,MainActivity.class));
             finish();
             return true;
+
+            case R.id.action_add:
+                startActivity(new Intent(HomeActivity.this, PostActivity.class));
+                finish();
+                return true;
         }
         return false;
     }
